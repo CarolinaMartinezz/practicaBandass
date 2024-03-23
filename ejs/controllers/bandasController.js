@@ -2,7 +2,9 @@ const db = require ("../db/index")
 
 const bandasController = {
     index: function (req,res){ 
-        return res.send(db.lista)
+        return res.render("listadoBandas", {
+            lista: db.lista,
+        })
     },
     id: function (req,res){
         let id = req.params.id;
