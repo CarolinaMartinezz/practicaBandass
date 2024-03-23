@@ -83,3 +83,7 @@ bandas = {
         }
     ]
 }
+
+
+
+module.exports = bandas
