@@ -23,3 +23,5 @@ const bandasController = {
         return res.send(resultado)
     }
 }
+
+module.exports= bandasController
