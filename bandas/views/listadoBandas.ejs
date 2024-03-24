@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Listado: <%= lista %></p>
+    <h1>Listado bandas:</h1>
+    <ul>
+    <% for( let i = 0; i < lista.length; i++ ) { %>
+    <li>→<%= lista[i].nombre %></li>
+    <img src="<%= lista[i].cover %>">
+    <% } %>
+    </ul>
 </body>
 </html>

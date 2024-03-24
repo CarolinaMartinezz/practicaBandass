@@ -6,9 +6,9 @@ const bandasController=require('../controllers/bandasController')
 
 router.get("/", bandasController.index)
 
-router.get("/id/:id", bandasController.id)
+router.get("/:id", bandasController.id)
 
-router.get("/generos", bandasController.generos)
+router.get("/generos/:generos", bandasController.generos)
 
 
 

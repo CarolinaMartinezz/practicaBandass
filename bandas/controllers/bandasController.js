@@ -18,17 +18,25 @@ const bandasController = {
         }
         if (bandaEncontrada) {
             return res.render('detalleBandas', { lista: bandaEncontrada });
-        } else {
+        } else { //(null)
             return res.send("No encontramos la banda indicada. Por favor, elija otro ID.");
         }
     },
-    generos:function (req,res){
+    generos: function (req, res) {
+        let genero = req.params.generos.toLowerCase(); // Accede al parámetro 'genero' desde la URL y conviértelo a minúsculas
         let resultado = [];
-        for (let i=0; i < db.lista.length; i++){
-            resultado.push(db.lista[i].genero);
+        for (let i = 0; i < db.lista.length; i++) {
+            if (genero === db.lista[i].genero.toLowerCase()) { // Comparación de género insensible a mayúsculas y minúsculas
+                resultado.push(db.lista[i]);
+            }
         }
-        return res.send(resultado) //cambiar a render
+        if (resultado.length > 0) {
+            res.render('porGenero', { lista: resultado, gen: genero });
+        } else {
+            return res.send('No encontramos bandas con ese género.');
+        }
     }
+    
 }
 
 module.exports= bandasController
