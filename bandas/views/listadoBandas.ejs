@@ -5,8 +5,8 @@
     <h1>Listado bandas:</h1>
     <ul>
     <% for( let i = 0; i < lista.length; i++ ) { %>
-    <li>→<%= lista[i].nombre %></li>
-    <img src="<%= lista[i].cover %>" width="300px">
+    <a href="http://localhost:3000/bandas/<%= lista[i].id%>"><li>→<%= lista[i].nombre %></li></a>
+    <a href="http://localhost:3000/bandas/<%= lista[i].id%>"><img src="<%= lista[i].cover %>" width="300px"></a>
     <% } %>
     </ul>
 </body>

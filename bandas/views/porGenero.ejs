@@ -5,7 +5,7 @@
     <h2>Bandas encontradas de <%= gen %>:</h2>
     <ul>
         <% for( let i = 0; i < lista.length; i++ ) { %>
-        <li><%= lista[i].nombre %></li>
+        <a href="http://localhost:3000/bandas/<%= lista[i].id %>"><li><%= lista[i].nombre %></li></a>
         <% } %>
     </ul>
 </body>
