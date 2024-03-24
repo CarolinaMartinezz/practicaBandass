@@ -4,7 +4,8 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #010506;
+  text-decoration: none;
 }
 li{
   font-size: medium;
