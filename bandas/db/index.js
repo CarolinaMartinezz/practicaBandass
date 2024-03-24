@@ -21,7 +21,7 @@ bandas = {
             integrantes: 5,
             genero: "Hip hop",
             topCanciones: ["Straight outta compton","Fuk da police","Boys in the hood"],
-            cover: 'images/nwa.png',
+            cover: 'images/nwa.jpg',
             id: 3,
             video: "https://www.youtube.com/watch?v=TMZi25Pq3T8"
         },{
@@ -29,7 +29,7 @@ bandas = {
             integrantes: 8,
             genero: "Hip hop",
             topCanciones: ["C.R.E.A.M","Method man","Da mystery of chessboxin'"],
-            cover: 'images/wu.jpg',
+            cover: 'images/wu.png',
             id: 4,
             video: "https://www.youtube.com/watch?v=PEnwXYJcSZc"
         },{
@@ -37,7 +37,7 @@ bandas = {
             integrantes: 1,
             genero: "Rap",
             topCanciones: ["Es épico", "Maquiavéñico", "Jeremías 17:5"],
-            cover: 'images/canserbero.png',
+            cover: 'images/canserbero.jpg',
             id: 5,
             video: "https://www.youtube.com/watch?v=sq6oc066w14"
         },{

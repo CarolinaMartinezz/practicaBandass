@@ -23,10 +23,10 @@ const bandasController = {
         }
     },
     generos: function (req, res) {
-        let genero = req.params.generos.toLowerCase(); // Accede al parámetro 'genero' desde la URL y conviértelo a minúsculas
+        let genero = req.params.generos.toLowerCase(); //por las dudas
         let resultado = [];
         for (let i = 0; i < db.lista.length; i++) {
-            if (genero === db.lista[i].genero.toLowerCase()) { // Comparación de género insensible a mayúsculas y minúsculas
+            if (genero === db.lista[i].genero.toLowerCase()) { 
                 resultado.push(db.lista[i]);
             }
         }
