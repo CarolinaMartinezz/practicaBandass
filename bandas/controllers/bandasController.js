@@ -2,7 +2,6 @@ const db = require ("../db/index")
 
 const bandasController = {
     index: function (req,res){ 
-        console.log('hola, anda')
         return res.render("listadoBandas", {
             lista: db.lista
         })
