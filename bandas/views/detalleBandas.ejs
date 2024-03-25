@@ -3,9 +3,9 @@
 <%- include ('./partials/head') %>
 <body>
     <h2>Banda: <%= lista.nombre %></h2>
-    <img src="<%= lista.cover %>" width="300px">
+    <img src="/<%= lista.cover %>" width="300px">
     <a href="http://localhost:3000/bandas/generos/<%=lista.genero%>"><h2>Genero: <%= lista.genero %></h2> </a>
     <h2>Integrantes: <%= lista.integrantes %></h2> 
-    <h2>Mejores hits: <%= lista.topCanciones %></h2> 
+    <h2>Mejores hits: <%= lista.topCanciones %></h2>
 </body>
 </html>
